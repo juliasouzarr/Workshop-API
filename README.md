@@ -4,7 +4,7 @@
 
 This project is a REST API developed with .NET for managing workshop budgets. It includes input validation, business rules, automatic total calculation, and in-memory data persistence.
 
-Developed as part of a technical assessment for a .NET Backend Developer position, this project also served as an opportunity to strengthen my API development skills and expand my portfolio.
+Developed as part of a technical assessment for a .NET Backend Developer position, this project also served as an opportunity to strengthen backend architecture concepts, API development practices, and portfolio projects.
 
 ---
 
@@ -20,19 +20,36 @@ Developed as part of a technical assessment for a .NET Backend Developer positio
 ## ⚙️ Features
 
 * Create a new budget
+* Retrieve all budgets
+* Retrieve budget by ID
+* Update budgets
+* Delete budgets
 * Input validation
-* Automatic total calculation (items + overall budget)
+* Automatic total calculation
+* Business rules validation
 * In-memory persistence using EF Core
-* Retrieve created budgets
+
+---
+
+## 🏗️ Project Structure
+
+The project was organized with separation of responsibilities using:
+
+* DTOs
+* Services
+* Models
+* Endpoints
+* Data layer
 
 ---
 
 ## 🧪 Tests Performed
 
-* Valid budget creation ✔️
+* Valid scenarios ✔️
 * Missing required fields ✔️
 * Empty items list ✔️
 * Invalid values (zero or negative) ✔️
+* Nonexistent budget ✔️
 
 ---
 
